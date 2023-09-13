@@ -1,0 +1,40 @@
+.little-card {
+  width: 200px;
+  height: 236px;
+  border-radius: 0.8rem;
+  background-color: #DA0175;
+  padding: 24px 26px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.little-card:hover {
+  transform: scale(1.07);
+  opacity: 0.7;
+}
+
+.content-photo {
+  display: flex;
+  width: 147px;
+  height: 147px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #FCFCFC;
+}
+
+img[alt="teacher"] {
+  width: 139px;
+  border-radius: 50%;
+}
+
+.little-card h3 {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
