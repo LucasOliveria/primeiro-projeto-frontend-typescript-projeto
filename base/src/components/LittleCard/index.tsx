@@ -5,7 +5,7 @@ import './style.css';
 function LittleCard({ teacher }: { teacher: Teacher }) {
   const navigate = useNavigate()
   return (
-    <div className='little-card' onClick={() => navigate(`/main/${teacher.id}`)}>
+    <div className='little-card' onClick={() => navigate(`/teacher/${teacher.id}`)}>
       <div className='content-photo'>
         <img src={teacher.avatar} alt="teacher" />
       </div>

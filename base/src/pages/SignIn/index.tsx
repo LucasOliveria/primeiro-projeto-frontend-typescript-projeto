@@ -36,7 +36,7 @@ function SignIn() {
         password: ''
       })
     } catch (error: any) {
-      console.log(error.response.data);
+      console.log(error);
     }
   }
   function handleFormLogin(event: ChangeEvent<HTMLInputElement>) {

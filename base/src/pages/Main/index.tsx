@@ -10,7 +10,7 @@ function Main({ teachers, setTeachers }: StateTeachers) {
     try {
       const response = await api.get('/teachers');
 
-      setTeachers(response.data);
+      setTeachers && setTeachers(response.data);
     } catch (error) {
       console.log(error);
     }

@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import SignIn from "./pages/SignIn";
 import { Teacher } from "./types/types";
 import { getToken } from "./utils/storage";
+import TeacherDetails from "./pages/TeacherDetails";
 
 type Props = {
   redirectTo: string
@@ -23,7 +24,7 @@ function MainRoutes() {
 
       <Route element={<ProtectedRoutes redirectTo="/" />}>
         <Route path="/main" element={<Main teachers={teachers} setTeachers={setTeachers} />} />
-        {/* <Route path="/main/:id" element={<Main />} /> */}
+        <Route path="/teacher/:id" element={<TeacherDetails teachers={teachers} />} />
       </Route>
     </Routes>
   )

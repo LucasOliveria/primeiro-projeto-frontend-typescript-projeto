@@ -12,7 +12,3 @@ export type StateTeachers = {
   teachers: Teacher[]
   setTeachers: Dispatch<SetStateAction<Teacher[]>>
 }
-
-export type JustOneTeacher = {
-  teacher: Omit<StateTeachers, 'setTeachers'>
-}
