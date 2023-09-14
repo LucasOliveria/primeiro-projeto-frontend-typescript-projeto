@@ -8,6 +8,7 @@ export type Teacher = {
   bio: string
 }
 
+/* Não está sendo usado*/
 export type StateTeachers = {
   teachers: Teacher[]
   setTeachers: Dispatch<SetStateAction<Teacher[]>>

@@ -4,8 +4,14 @@ import './style.css';
 
 function LittleCard({ teacher }: { teacher: Teacher }) {
   const navigate = useNavigate()
+
+  function handleCurrentTeacher(teacher: Teacher) {
+    // OUTRA SOLUÇÃO
+    // localStorage.setItem('current-teacher', JSON.stringify(teacher));
+    navigate(`/teacher/${teacher.id}`);
+  }
   return (
-    <div className='little-card' onClick={() => navigate(`/teacher/${teacher.id}`)}>
+    <div className='little-card' onClick={() => handleCurrentTeacher(teacher)}>
       <div className='content-photo'>
         <img src={teacher.avatar} alt="teacher" />
       </div>
